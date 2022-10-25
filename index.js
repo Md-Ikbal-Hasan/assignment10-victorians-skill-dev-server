@@ -18,6 +18,15 @@ app.get('/course', (req, res) => {
 })
 
 
+// load single course
+app.get('/course/:id', (req, res) => {
+    const id = parseInt(req.params.id);
+    const selectedCourse = course.find(course => course.id === id);
+    res.send(selectedCourse);
+
+})
+
+
 
 
 
