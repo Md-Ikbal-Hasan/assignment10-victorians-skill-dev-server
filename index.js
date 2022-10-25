@@ -27,10 +27,6 @@ app.get('/course/:id', (req, res) => {
 })
 
 
-
-
-
-
 app.listen(port, () => {
     console.log("victorians-skill-development server is running on port ", port);
 })
